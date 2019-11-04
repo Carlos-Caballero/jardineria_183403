@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27/10/2019 12:42:02 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="hibernate.Productos" table="productos" catalog="jardineria" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" />
+        </property>
+        <property name="precio" type="java.lang.Integer">
+            <column name="precio" />
+        </property>
+        <property name="tipoProducto" type="java.lang.Integer">
+            <column name="tipoProducto" />
+        </property>
+        <property name="estadoProducto" type="java.lang.Integer">
+            <column name="estadoProducto" />
+        </property>
+        <property name="fechaIngreso" type="date">
+            <column name="fechaIngreso" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
